@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "395365819683",
+    "project_id": "sublime-shift-395007",
+    "storage_bucket": "sublime-shift-395007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395365819683:android:3242177c5b4f2ec0b39896",
+        "android_client_info": {
+          "package_name": "com.example.animationandshared"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpq4fJfvoTD9bcSZ7c10jZnH4iCHVGxlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

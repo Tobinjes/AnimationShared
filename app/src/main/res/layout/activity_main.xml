@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/login"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="#07E6A7"
+        android:textSize="30dp"
+        android:fontFamily="serif-monospace"
+        android:backgroundTint="#05131D"
+        android:layout_marginRight="30dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="Signup"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:backgroundTint="#05131D"
+        android:textColor="#07E6A7"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#05131D"
+        android:text="BYpass"
+        android:textColor="#07E6A7"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/bypass"
+        android:fontFamily="serif-monospace"/>
+
+
+</LinearLayout>
