@@ -14,7 +14,7 @@
         android:id="@+id/userName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Muzammil"
+        android:text="username"
         android:textStyle="bold"
         android:layout_toRightOf="@id/img"
         android:layout_marginLeft="8dp"
