@@ -1,6 +1,7 @@
 package com.example.animationandshared;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class ActivityUsers extends AppCompatActivity {
+public class ActivityUsers extends AppCompatActivity implements AdapterUser.OnUserClick {
     RecyclerView recyclerView;
     AdapterUser adapterUser;
     List<ModelUser> list;
@@ -36,8 +37,14 @@ public class ActivityUsers extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.rvUsers);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapterUser = new AdapterUser(this, list);
+        adapterUser = new AdapterUser(this, list, this);
         recyclerView.setAdapter(adapterUser);
+
+    }
+
+    @Override
+    public void userClick(ModelUser modelUser) {
+        Toast.makeText(this, ""+modelUser, Toast.LENGTH_SHORT).show();
 
     }
 }
